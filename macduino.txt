@@ -1,3 +1,5 @@
+Spec for macduino.ino
+
 Main Loop:
 	int cpuUsage = readCPU()
 	int memUsage = readMem()
@@ -12,7 +14,7 @@ Get CPU Usage -->		int readCPU()
 
 Get Memory Usage -->	int readMem()
 	Function
-	Reads memory usage
+	Reads memory usage from the laptop
 	Returns int
 
 Set Upper LCD --> 		void printUpper(string)
