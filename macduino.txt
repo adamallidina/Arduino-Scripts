@@ -1,0 +1,26 @@
+Main Loop:
+	int cpuUsage = readCPU()
+	int memUsage = readMem()
+	printUpper(cpuUsage)
+	printLower(memUsage)
+	delay(5000)
+
+Get CPU Usage -->		int readCPU()
+	Function
+	Reads the cpu usage from the laptop
+	Returns int
+
+Get Memory Usage -->	int readMem()
+	Function
+	Reads memory usage
+	Returns int
+
+Set Upper LCD --> 		void printUpper(string)
+	Function
+	Prints input string to upper lcd half
+	Void
+
+Set Lower LCD -->		void printLower(string)
+	Function
+	Prints input string to lower lcd half
+	Void
