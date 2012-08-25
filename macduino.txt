@@ -1,28 +1,31 @@
 Spec for macduino.ino
 
-Main Loop:
-	int cpuUsage = readCPU()
-	int memUsage = readMem()
-	printUpper(cpuUsage)
-	printLower(memUsage)
-	delay(5000)
+	Set Upper LCD --> 		void printUpper(string)
+		Function
+		Prints input string to upper lcd half
+		Void
 
-Get CPU Usage -->		int readCPU()
-	Function
-	Reads the cpu usage from the laptop
-	Returns int
+	Set Lower LCD -->		void printLower(string)
+		Function
+		Prints input string to lower lcd half
+		Void
+	
 
-Get Memory Usage -->	int readMem()
-	Function
-	Reads memory usage from the laptop
-	Returns int
-
-Set Upper LCD --> 		void printUpper(string)
-	Function
-	Prints input string to upper lcd half
-	Void
-
-Set Lower LCD -->		void printLower(string)
-	Function
-	Prints input string to lower lcd half
-	Void
+Spec for macduino.py
+	import serial --> write serial data
+	import psutil --> read cpu and mem usage
+	
+	def readCPU()
+		reads cpu usage
+		returns an int
+	
+	def readMem()
+		reads mem usage
+		returns an int
+	
+	def main()
+		readCPU()
+		write to serial
+		readMem()
+		write to serial
+		time.delay(5)
